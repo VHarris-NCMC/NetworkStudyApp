@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="@color/theme3">
 
     <!-- Number of Questions Selector -->
     <TextView
@@ -16,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:entries="@array/number_of_questions"
+        android:background="@color/theme1"
         android:padding="8dp" />
 
     <!-- Max Difficulty Slider -->
@@ -28,6 +30,7 @@
         android:id="@+id/seekbar_difficulty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/theme1"
         android:max="10"
         android:progress="5"
         android:padding="8dp" />
@@ -55,6 +58,7 @@
 
     <!-- Timer Duration Slider -->
     <TextView
+        android:id="@+id/textview_timer_duration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Timer Duration (in seconds)"
@@ -64,6 +68,7 @@
         android:id="@+id/seekbar_timer_duration"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/theme1"
         android:max="50"
         android:min="10"
         android:padding="8dp"

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="#F2F2F2">
+    android:background="@color/theme2">
 
     <TextView
         android:id="@+id/text_flashcard"
@@ -11,9 +11,9 @@
         android:layout_height="wrap_content"
         android:text="Am I ready for the exam?"
         android:textSize="20sp"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/theme1"
         android:gravity="center"
-        android:background="#008577"
+        android:background="@color/theme2"
         android:clickable="true" />
 
     <LinearLayout
@@ -24,42 +24,61 @@
         android:orientation="vertical"
         android:paddingTop="16dp">
 
-        <RadioButton
-            android:id="@+id/option_a"
+        <RadioGroup
+            android:id="@+id/radio_group"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Option A"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:background="#FFFFFF" />
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
 
-        <RadioButton
-            android:id="@+id/option_b"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Option B"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:background="#FFFFFF" />
+            <RadioButton
+                android:id="@+id/option_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option A"
+                android:padding="12dp"
+                android:textColor="@color/theme1"
+                android:background="@color/theme2" />
 
-        <RadioButton
-            android:id="@+id/option_c"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Option C"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:background="#FFFFFF" />
+            <RadioButton
+                android:id="@+id/option_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option B"
+                android:padding="12dp"
+                android:textColor="@color/theme1"
+                android:background="@color/theme2" />
 
-        <RadioButton
-            android:id="@+id/option_d"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Option D"
-            android:padding="12dp"
-            android:textColor="#000000"
-            android:background="#FFFFFF" />
+            <RadioButton
+                android:id="@+id/option_c"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option C"
+                android:padding="12dp"
+                android:textColor="@color/theme1"
+                android:background="@color/theme2" />
+
+            <RadioButton
+                android:id="@+id/option_d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option D"
+                android:padding="12dp"
+                android:textColor="@color/theme1"
+                android:background="@color/theme2" />
+
+        </RadioGroup>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/theme2"
+        android:textColor="@color/text_color1"
+        android:text="Submit Answer"
+        android:layout_below="@id/answers_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 
 </RelativeLayout>

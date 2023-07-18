@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NetworkStudyApp</string>
+    <string name="google_signin_prompt">Sign-In!</string>
+    <string name="google_signin_logo_description">Sign In With Google\n</string>
+    <string name="androidClientID">909949754168-1nvhuehmbq3tn94i5gpm73f7o44v43rg.apps.googleusercontent.com</string>
+    <string name="webClientID">909949754168-tf37mtcteojjijre1otmmj1l2fi00p87.apps.googleusercontent.com</string>
+    <string name="empty_string" />
+</resources>

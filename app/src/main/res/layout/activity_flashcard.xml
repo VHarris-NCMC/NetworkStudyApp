@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/theme2"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_flashcard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:visibility="invisible"
+        android:minHeight="30dp"
+        android:textSize="20sp"
+        android:textColor="@color/theme2"
+        android:background="@color/theme1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:clickable="true" />
+
+
+    <Button
+        android:id="@+id/button_getnext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/theme1"
+        android:gravity="center"
+        android:text="Begin"
+        android:textColor="@color/theme2" />
+
+
+</LinearLayout>

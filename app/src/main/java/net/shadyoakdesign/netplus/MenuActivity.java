@@ -1,5 +1,7 @@
 package net.shadyoakdesign.netplus;
 
+import static net.shadyoakdesign.netplus.QuizActivity.exampleQuestions;
+
 import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
@@ -11,6 +13,7 @@ public class MenuActivity extends AppCompatActivity {
     private Button studyButton;
     private Button quizButton;
     private Button statsButton;
+    private Button flashcardsButton;
     private Button settingsButton;
     private Button certifiedButton;
     private Button accountButton;
@@ -24,6 +27,7 @@ public class MenuActivity extends AppCompatActivity {
         studyButton = findViewById(R.id.studyButton);
         quizButton = findViewById(R.id.quizButton);
         statsButton = findViewById(R.id.statsButton);
+        flashcardsButton = findViewById(R.id.flashcardsButton);
         settingsButton = findViewById(R.id.settingsButton);
         certifiedButton = findViewById(R.id.certifiedButton);
         accountButton = findViewById(R.id.accountButton);
@@ -40,6 +44,12 @@ public class MenuActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 openQuizActivity();
+            }
+        });
+        flashcardsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openFlashcardActivity();
             }
         });
 
@@ -88,6 +98,11 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(MenuActivity.this, QuizActivity.class);
         startActivity(intent);
     }
+    private void openFlashcardActivity() {
+        Intent intent = new Intent(MenuActivity.this, FlashcardActivity.class);
+        startActivity(intent);
+    }
+
 
     private void openStatsActivity() {
         Intent intent = new Intent(MenuActivity.this, StatsActivity.class);
@@ -98,6 +113,7 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(MenuActivity.this, SettingsActivity.class);
         startActivity(intent);
     }
+
 
     private void openCertifiedActivity() {
         Intent intent = new Intent(MenuActivity.this, CertifiedActivity.class);
@@ -115,4 +131,5 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = new Intent(MenuActivity.this, AboutActivity.class);
         startActivity(intent);
     }
+
 }

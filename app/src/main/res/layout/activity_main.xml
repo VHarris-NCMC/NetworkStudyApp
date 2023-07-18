@@ -24,6 +24,8 @@
         android:layout_below="@id/googleSignInButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:text="Skip Sign-In" />
+        android:text="Skip Sign-In"
+        android:background="@color/theme1"
+        android:textColor="@color/text_color1"/>
 
 </RelativeLayout>

@@ -4,27 +4,44 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="16dp"
-    tools:context=".GoogleSignInActivity">
+    android:gravity="center">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/google_signin_logo"
-        android:contentDescription="@string/google_signin_logo_description" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/google_signin_prompt"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp" />
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_google_logo"
+        android:contentDescription="@string/google_signin_prompt"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="32dp"/>
 
     <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button_google"
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp" />
+        android:text="Proceed to Menu"
+        android:id="@+id/menu_button"/>
+    <TextView
+        android:id="@+id/name_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FirstName LastName">
+    </TextView>
+    <TextView
+        android:id="@+id/email_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email@email.com"
+        />
+    <Button
+        android:id="@+id/sign_out_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Out"
+        />
+
+
 
 </LinearLayout>

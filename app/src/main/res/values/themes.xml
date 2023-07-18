@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NetworkStudyApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/theme1</item>
+        <item name="android:textColor">@color/text_color1</item>
+        <item name="android:colorBackground">@color/theme2</item>
+
+    </style>
+
+    <style name="Theme.NetworkStudyApp" parent="Base.Theme.NetworkStudyApp" />
+</resources>

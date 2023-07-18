@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "909949754168",
+    "project_id": "peaceful-campus-390922",
+    "storage_bucket": "peaceful-campus-390922.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909949754168:android:8bba41363789fcbe877fcd",
+        "android_client_info": {
+          "package_name": "net.shadyoakdesign.netplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909949754168-1nvhuehmbq3tn94i5gpm73f7o44v43rg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "net.shadyoakdesign.netplus",
+            "certificate_hash": "f072323a63ffd16247c0c988a86d85fb62bceb44"
+          }
+        },
+        {
+          "client_id": "909949754168-tf37mtcteojjijre1otmmj1l2fi00p87.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzUh8kLvNXtnhTh0wQLJVDo-UZ6LVX268"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909949754168-tf37mtcteojjijre1otmmj1l2fi00p87.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

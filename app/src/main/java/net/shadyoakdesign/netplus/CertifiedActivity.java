@@ -1,6 +1,7 @@
 package net.shadyoakdesign.netplus;
 
 import android.app.Activity;
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -70,10 +71,13 @@ public class CertifiedActivity extends Activity {
     private void openWebsite(String url) {
         Uri webpage = Uri.parse(url);
         Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
-        if (intent.resolveActivity(getPackageManager()) != null) {
+        try {
             startActivity(intent);
+        } catch (ActivityNotFoundException e) {
+            showToast("No application can handle this request");
         }
     }
+
 
 
 
